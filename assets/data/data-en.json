@@ -1,0 +1,640 @@
+{
+  "navigation": {
+    "links": [
+      {
+        "name": "Gallery",
+        "href": "#gallery-section"
+      },
+      {
+        "name": "Menu",
+        "href": "#menu-section"
+      },
+      {
+        "name": "Contact",
+        "href": "#contact-section"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Restaurant Mediterranean BCN",
+    "description": "Experience the finest Italian cuisine in the heart of Diagonal Mar",
+    "imagePath": "/images/hero-image.jpg"
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "tel:+34 932 503 376",
+    "email": "test@qa.com",
+    "address": "C/ de Josep Pla, 19, 08019 BCN"
+  },
+  "schedule": {
+    "title": "Opening hours",
+    "dateInfo": [
+      {
+        "day": "Tuesday - Sunday",
+        "hours": "11:00 - 16:00 , 19:00 - 23:00"
+      }
+    ],
+    "askUs": "Call us"
+  },
+  "menuSectionInfo": {
+    "title": "Our Menu",
+    "description": "menu description",
+    "seeAllMenuText": "See all menu",
+    "sectionLink": "/menu/carta-eng.pdf"
+  },
+  "menuSections": [
+    {
+      "name": "Entrantes",
+      "menuSubSections": [
+        {
+          "items": [
+            {
+              "name": "Edamame",
+              "description": "Vainas de soja / Opción picante",
+              "price": "3€/3.50€"
+            },
+            {
+              "name": "Sopa de miso",
+              "description": "Servida con tofu, alga wakame y cebolla tierna / Opción picante",
+              "price": "3.85€/4€"
+            },
+            {
+              "name": "Goma sarada",
+              "description": "Ensalada de alga goma y sésamo",
+              "price": "4€"
+            },
+            {
+              "name": "Kiuri Ebi sarada",
+              "description": "Ensalada de pepino marinado, lechuga, alga wakame y langostinos, aliñada con vinagre de arroz",
+              "price": "4.35€"
+            },
+            {
+              "name": "Tataki sarada",
+              "description": "Ensalada de lechuga, alga wakame y tataki de atún",
+              "price": "8.65€"
+            },
+            {
+              "name": "Gyosas vegetales",
+              "description": "Empanadillas rellenas de verduras (6u.)",
+              "price": "6.95€"
+            },
+            {
+              "name": "Gyosas de cerdo",
+              "description": "Empanadillas rellenas de cerdo (6u.)",
+              "price": "7.40€"
+            },
+            {
+              "name": "Gyosas de marisco",
+              "description": "Empanadillas rellenas de marisco (6u.)",
+              "price": "7.65€"
+            },
+            {
+              "name": "Aspara No furai",
+              "description": "Tempura de espárragos con salsa teriyaki (6u.)",
+              "price": "7.20€"
+            },
+            {
+              "name": "Ebi No furai",
+              "description": "Tempura de langostinos, salsa cítrica, chile dulce, acompañados de huevo pochado",
+              "price": "9.65€"
+            },
+            {
+              "name": "Nasu No Furai",
+              "description": "Tempura de berenjenas con salsa de maracuyá",
+              "price": "6.95€"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Poke Bol",
+      "menuSubSections": [
+        {
+          "items": [
+            {
+              "name": "Poke vegetal",
+              "description": "Arroz, edamame, aguacate, alga goma wakame y sésamo",
+              "price": "12.60€"
+            },
+            {
+              "name": "Poke salmón",
+              "description": "Arroz, salmón, edamame, aguacate, alga goma wakame, ikura y sésamo",
+              "price": "13.90€"
+            },
+            {
+              "name": "Poke salmón y atún",
+              "description": "Salmón, atún, edamame, aguacate, alga goma wakame, ikura y sésamo",
+              "price": "15.50€"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sushi y Sashimi",
+      "menuSubSections": [
+        {
+          "title": "Platos marinados y flambeados",
+          "items": [
+            {
+              "name": "Tartar de salmón",
+              "description": "Con aguacate y wasabi natural",
+              "price": "11.85€"
+            },
+            {
+              "name": "Tartar de atún",
+              "description": "Con aguacate y salsa de sésamo",
+              "price": "13.55€"
+            },
+            {
+              "name": "Ceviche",
+              "description": "Hamachi marinada con cítricos, cebolla morada y cilantro (pescado hamachi)",
+              "price": "14.85€"
+            },
+            {
+              "name": "Tataki de atún",
+              "description": "Atún marcado a la plancha con cebolla confitada",
+              "price": "10.75€"
+            }
+          ]
+        },
+        {
+          "title": "Makis (8u.)",
+          "items": [
+            {
+              "name": "Sake Maki",
+              "description": "Salmón",
+              "price": "6.95€"
+            },
+            {
+              "name": "Maguro Maki",
+              "description": "Atún",
+              "price": "7.15€"
+            },
+            {
+              "name": "Spicy Maguro Maki",
+              "description": "Atún picante",
+              "price": "7.25€"
+            },
+            {
+              "name": "Spicy Ebi Maki",
+              "description": "Langostino picante",
+              "price": "7.15€"
+            },
+            {
+              "name": "Abokado Maki",
+              "description": "Aguacate",
+              "price": "5.40€"
+            },
+            {
+              "name": "Atsukau Maki",
+              "description": "Mango",
+              "price": "5.45€"
+            },
+            {
+              "name": "Wagyu Maki",
+              "description": "Ternera Wagyu a la plancha",
+              "price": "9.95€"
+            },
+            {
+              "name": "Foie a la plancha",
+              "description": "Atún picante",
+              "price": "7.95€"
+            }
+          ]
+        },
+        {
+          "title": "Futomakis (8u.)",
+          "items": [
+            {
+              "name": "Hot Philadelphia",
+              "description": "Salmón, aguacate, queso crema, cebolla tierna a  la plancha y salsa ponzu",
+              "price": "9.35€"
+            },
+            {
+              "name": "Magret Futomaki",
+              "description": "Magret de pato, gobo, lechuga, aguacate y a salsa ponzu",
+              "price": "10.25€"
+            },
+            {
+              "name": "Wagyu Futomaki",
+              "description": "Ternera Wagyu a la plancha, mayo picante, espárragos y foie",
+              "price": "13.35€"
+            },
+            {
+              "name": "Mango Futomaki",
+              "description": "Mango, aguacate, queso crema y albahaca",
+              "price": "6.65€"
+            }
+          ]
+        },
+        {
+          "title": "Uramakis (8u.)",
+          "items": [
+            {
+              "name": "Sapporo Uramaki",
+              "description": "Relleno de salmón y aguacate",
+              "price": "7.85€"
+            },
+            {
+              "name": "Funabashi Uramaki",
+              "description": "Relleno de aguacate, tomate y pepino",
+              "price": "6.80€"
+            },
+            {
+              "name": "Sakai Uramaki",
+              "description": "Relleno de salmón y aguacate, recubierto  de salsa tártara de menta",
+              "price": "7.95€"
+            },
+            {
+              "name": "California Uramaki",
+              "description": "Relleno de cangrejo natural, aguacate, pepino, mayo y masago",
+              "price": "9.45€"
+            },
+            {
+              "name": "Hirosaki Uramaki",
+              "description": "Relleno de atún picante y aguacate, recubierto de cebolla confitada",
+              "price": "9.55€"
+            },
+            {
+              "name": "Hokkai Salmó Uramaki",
+              "description": "Relleno de aguacate y queso crema rebozados, recubierto de salmón picado y salsa teriyaki",
+              "price": "10.45€"
+            },
+            {
+              "name": "Mayami Uramaki",
+              "description": "Relleno de salmón marinado, cebolla encurtida,  espárragos, jalapeños y queso crema,  recubierto con aguacate y salsa chipotle",
+              "price": "9.80€"
+            },
+            {
+              "name": "Tokyo Uramaki",
+              "description": "Relleno de atún picante y lechuga, recubierto con aguacate, salsa de miso y sésamo",
+              "price": "10.20€"
+            },
+            {
+              "name": "Kyoto Uramaki",
+              "description": "Relleno de tempura de pollo, lechuga, recubierto con cebolla encurtida, aguacate y salsa chipotle",
+              "price": "9.45€"
+            },
+            {
+              "name": "Osaka Uramaki",
+              "description": "Relleno de tempura de langostinos, aguacate, cebollino y mayo picante, recubierto de salmón flambeado y pistachos",
+              "price": "11.85€"
+            },
+            {
+              "name": "Kobe Uramaki",
+              "description": "Relleno de salmón, atún y aguacate, recubierto de pescado blanco, salmón y atún con salsa teriyaki",
+              "price": "12.95€"
+            },
+            {
+              "name": "Iroshima Uramaki",
+              "description": "Relleno de tempura de queso feta y rúcula, recubierto de aguacate y salsa teriyaki",
+              "price": "7.15€"
+            },
+            {
+              "name": "Fukuoka Uramaki",
+              "description": "Relleno de ternera Wagyu, setas shitake y cebolla confitada",
+              "price": "13.45€"
+            },
+            {
+              "name": "Yokohama Uramaki",
+              "description": "Relleno de langostinos a la plancha, aguacate y rúcula, recubierto de ikura y trufa",
+              "price": "10.85€"
+            },
+            {
+              "name": "Kawasaki Uramaki",
+              "description": "Relleno de cangrejo y aguacate, recubierto de salmón flambeado y pistachos",
+              "price": "10.20€"
+            },
+            {
+              "name": "Aruku Uramaki",
+              "description": "Relleno de tempura de salmón y mayo picante, recubierto de anguila y salsa teriyaki",
+              "price": "11.95€"
+            },
+            {
+              "name": "Osaka Uramaki",
+              "description": "Relleno de tempura de langostinos, aguacate, cebollino y mayo picante, recubierto de salmón flambeado y pistachos",
+              "price": "11.85€"
+            },
+            {
+              "name": "Nagano Uramaki",
+              "description": "Relleno de anguila, queso crema y pepino, recubierto con masago y salsa teriyaki",
+              "price": "12.25€"
+            }
+          ]
+        },
+        {
+          "title": "Nigiris (1u.)",
+          "items": [
+            {
+              "name": "Salmón (opción flambeado)",
+              "price": "3€"
+            },
+            {
+              "name": "Atún (opción flambeado)",
+              "price": "3.20€"
+            },
+            {
+              "name": "Hamachi",
+              "description": "pescado blanco japonés, opción flambeado",
+              "price": "4.20€"
+            },
+            {
+              "name": "Anguila",
+              "price": "3€"
+            },
+            {
+              "name": "Langostino",
+              "price": "2.85€"
+            },
+            {
+              "name": "Langostino flambeado",
+              "price": "2.95€"
+            },
+            {
+              "name": "Foie",
+              "price": "2.85€"
+            },
+            {
+              "name": "Magret de pato (4u.)",
+              "price": "8.80€"
+            },
+            {
+              "name": "Wagyu",
+              "description": "ternera japonesa Wagyu",
+              "price": "4.20€"
+            }
+          ]
+        },
+        {
+          "title": "Gunkan Nido (1u.)",
+          "items": [
+            {
+              "name": "Salmón",
+              "price": "3.85€"
+            },
+            {
+              "name": "Atún",
+              "price": "4.35€"
+            }
+          ]
+        },
+        {
+          "title": "Sashimi (1u.)",
+          "items": [
+            {
+              "name": "Salmón",
+              "price": "5.60€"
+            },
+            {
+              "name": "Atún",
+              "price": "6.85€"
+            },
+            {
+              "name": "Hamachi",
+              "description": "pescado blanco japonés",
+              "price": "7.20€"
+            },
+            {
+              "name": "Anguila",
+              "description": "pescado blanco japonés",
+              "price": "6.35€"
+            }
+          ]
+        },
+        {
+          "title": "Combinados de sushi y sashimi",
+          "items": [
+            {
+              "name": "Combinado de salmón",
+              "description": "8 sashimi + 4 nigiris + 1 maki",
+              "price": "17.45€"
+            },
+            {
+              "name": "Combinado de salmón y atún",
+              "description": "8 sashimi + 4 nigiris + 1 maki",
+              "price": "18.35€"
+            },
+            {
+              "name": "Combinado de pescados variados",
+              "description": "6 sashimi + 4 nigiris + 1 maki ",
+              "price": "18.85€"
+            },
+            {
+              "name": "Combinado de sashimi",
+              "description": "4 salmón + 4 atún + 4 langostinos + 4 hamachi",
+              "price": "20.45€"
+            },
+            {
+              "name": "Combinat Sushi No Moriawase",
+              "description": "7 nigiris + 1 maki",
+              "price": "16.65€"
+            },
+            {
+              "name": "Combinat Aruku",
+              "description": "4 sashimi salmón + 4 sashimi atún + 4 sashimi  hamachi + 4 nigiris salmón + 4 nigiris atún + 4 nigiri hamachi + 4 nigiris Wagyu + Tartar salmón + 1 roll hokkai + 1 roll Auku + 1 jarra de sake",
+              "price": "95€"
+            },
+            {
+              "name": "Chirashi",
+              "description": "Bol de arroz com sashimi de salmón, atún, hamachi y langostino",
+              "price": "18.65€"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cocina",
+      "menuSubSections": [
+        {
+          "title": "Platos calientes",
+          "items": [
+            {
+              "name": "Gohan",
+              "description": "Bol de arroz blanco",
+              "price": "3.45€"
+            },
+            {
+              "name": "Yakisoba",
+              "description": "Fideos de trigo al wok con verduras, panceta de cerdo, katsuobushi, sésamo y su salsa japonesa (opción fideos de arroz)",
+              "price": "9.25€"
+            },
+            {
+              "name": "Yakisoba vegetal",
+              "description": "Fideos de trigo al wok con verduras, sésamo y su salsa japonesa (opción fideos de arroz)",
+              "price": "9.25€"
+            },
+            {
+              "name": "Yakisoba Magret",
+              "description": "Fideos de trigo al wok con verduras, magret de pato, katsuobushi, sésamo y su salsa japonesa (opción fideos de arroz)",
+              "price": "11.40€"
+            },
+            {
+              "name": "Yakimeshi",
+              "description": "Arroz frito con verduras, huevo, panceta de cerdo, cebolleta, aceite de sésamo y kimuchi picante",
+              "price": "9.35€"
+            },
+            {
+              "name": "Yakimeshi vegetal",
+              "description": "Arroz frito con verduras, aceite de sésamo y kimuchi picante",
+              "price": "8.35€"
+            },
+            {
+              "name": "Yakimeshi de marisco",
+              "description": "Arroz frito con verduras, huevo, langostinos, calamares, aceite de sésamo y kimuchi picante",
+              "price": "10.65€"
+            },
+            {
+              "name": "Yaki Udon de marisco",
+              "description": "Fideos gruesos de trigo con verduras, langortinos, calamares y kimuchi picante (opción fideos de arroz)",
+              "price": "10.75€"
+            },
+            {
+              "name": "Magret Yaki Udon",
+              "description": "Fideos gruesos de trigo con verduras, magret de pato y kimuchi picante (opción fideos de arroz)",
+              "price": "11.55€"
+            },
+            {
+              "name": "Tori No Karage",
+              "description": "Pollo marinado estilo japonés en tempura, acompañado de mayonesa de miso",
+              "price": "7.65€"
+            },
+            {
+              "name": "Yasai Yaki",
+              "description": "Verdures salteadas al wok con setas shitake, aceite de sésamo y chile dulce",
+              "price": "7.75€"
+            },
+            {
+              "name": "Yasai Tempura",
+              "description": "Tempura de verduras, acompañada con su salsa",
+              "price": "7.50€"
+            },
+            {
+              "name": "Yasai Ebi Ika",
+              "description": "Tempura de verduras, langostinos  y trozos de calamar, acompañados con su salsa",
+              "price": "8.75€"
+            },
+            {
+              "name": "Ebi Okonomiyaki",
+              "description": "Tortilla japonesa con langostinos, calamares, cebolleta y salsa okonomiyaki",
+              "price": "7.65€"
+            },
+            {
+              "name": "Niku Okonomiyaki",
+              "description": "Tortilla japonesa con panceta de cerdo y salsa okonomiyaki",
+              "price": "8.65€"
+            },
+            {
+              "name": "Yasai Okonomiyaki",
+              "description": "Tortilla japonesa con verduras y salsa okonomiyaki",
+              "price": "8.50€"
+            },
+            {
+              "name": "Tomoe Gozen",
+              "description": "Aguacate en tempura relleno de atún picante, masago, aceite de sésamo y salsa teriyaki",
+              "price": "13.50€"
+            },
+            {
+              "name": "Tonkatsu de salmó",
+              "description": "Tempura de salmón con mayonesa de miso",
+              "price": "11.50€"
+            },
+            {
+              "name": "Pollastre teriyaki",
+              "description": "Pollo salteado con salsa teriyaki, acompañado con arroz",
+              "price": "7.55€"
+            },
+            {
+              "name": "Salmó Teriyaki",
+              "description": "Salmón a la plancha con salsa teriyaki, acompañado con arroz",
+              "price": "10.15€"
+            },
+            {
+              "name": "Tofu Teriyaki",
+              "description": "Dados de tofu con salsa teriyaki, acompañados de arroz",
+              "price": "8.35€"
+            }
+          ]
+        },
+        {
+          "title": "Brasa",
+          "items": [
+            {
+              "name": "Salmón a la brasa con verduras y chips de yuca",
+              "price": "12.35€"
+            },
+            {
+              "name": "Entrecot (500gr) a la brasa con verduras y chips de yuca",
+              "price": "18.60€"
+            },
+            {
+              "name": "Ternera Wagyu a la brasa con verduras, salsa yakiniku y chips de yuca",
+              "price": "29.50€"
+            },
+            {
+              "name": "Magret de pato  a la brasa con verduras, salsa ponzu y chips de yuca",
+              "price": "11.80€"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Postres",
+      "menuSubSections": [
+        {
+          "items": [
+            {
+              "name": "Coulant de chocolate relleno de chocolate fondant",
+              "price": "5.50€"
+            },
+            {
+              "name": "Coulant de chocolate con  helado de vainilla",
+              "price": "5.95€"
+            },
+            {
+              "name": "Coulant de chocolate con  helado de té verde o de wasabi",
+              "price": "6.40€"
+            },
+            {
+              "name": "Mochi de té verde de fresa (pastelito japonés de arroz relleno de mousse de té verde o de fresa",
+              "price": "5.80€"
+            },
+            {
+              "name": "Pastel de queso japonés con coulis de frutos rojos",
+              "price": "5.60€"
+            },
+            {
+              "name": "Mousse de té verde",
+              "price": "4.20€"
+            },
+            {
+              "name": "Trufas de té verde y sake",
+              "price": "4.30€"
+            },
+            {
+              "name": "Helado de té verde, wasabi o jengibre",
+              "price": "4.70€"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotice": [
+    {
+      "key": "privacy",
+      "fullText": "privacy test here"
+    },
+    {
+      "key": "cookie",
+      "fullText": "cookies text here"
+    },
+    {
+      "key": "legal",
+      "fullText": "legal text here"
+    }
+  ]
+}

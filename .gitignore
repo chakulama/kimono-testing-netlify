@@ -1,0 +1,14 @@
+# Nuxt build and generated files
+.nuxt
+dist
+node_modules
+.output
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
