@@ -3,10 +3,10 @@
 
 name: Build project
 
-# on:
-#   push:
-#     branches:
-#       - 'master'
+on:
+  push:
+    branches:
+      - '*'
 
 jobs:
   build:
