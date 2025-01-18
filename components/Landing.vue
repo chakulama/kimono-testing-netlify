@@ -26,7 +26,7 @@
     <div class="relative z-10 flex flex-col justify-center items-center">
       <img src="/public/logo-white.jpg" alt="Komono Sushi" class="w-48 mb-8 hover:scale-105 transition-transform" />
       <h1 class="font-bold mb-4 font-japanese">
-        <span class="block text-red-500 text-4xl md:text-6xl ">Komono Kitchen</span>
+        <span class="block text-red-500 text-4xl md:text-6xl ">Kimono Kitchen</span>
         <span class="block text-white text-2xl md:text-4xl mt-2">Sushi & Ramen</span>
       </h1>
       <p class="text-xl md:text-2xl mb-12 font-sans tracking-wider text-gray-300">Coming Soon</p>

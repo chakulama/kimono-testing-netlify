@@ -4,7 +4,7 @@
 
 <script setup>
 useHead({
-  title: "Restaurante Mediterraneo",
+  title: "Kimono Kitchen",
   htmlAttrs: {
     lang: "es",
   },
@@ -16,14 +16,14 @@ useHead({
       hid: "description",
       name: "description",
       content:
-        "restaurante mediterraneo bcn",
+        "Kimono Kitchen Ibiza",
     },
     {
       name: "keywords",
       content:
-        "restaurante mediterraneo bcn, good pizza, good paella, best pizza in bcn, best paella in bcn",
+        "restaurante sushi ibiza, sushi ibiza, japonés ibiza, mejor sushi ibiza",
     },
-  ],
+  ], 
   // script: [
   //   {
   //     src: "https://www.googletagmanager.com/gtag/js?id=G-5Z4QF52JJ5",

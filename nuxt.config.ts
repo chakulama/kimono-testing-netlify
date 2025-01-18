@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "nuxt-swiper", "nuxt-gtag"],
   gtag: process.env.NODE_ENV === 'production' ? {
-    id: 'G-5Z4QF52JJ5', // Replace with your Google Analytics ID
+    id: 'G-987B67WF31', // Replace with your Google Analytics ID
     config: {
       send_page_view: true, // Automatically track page views
     },
