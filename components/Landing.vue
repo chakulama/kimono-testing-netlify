@@ -1,58 +1,92 @@
 <template>
-  <div class="min-h-screen relative overflow-hidden bg-gradient-to-b from-black to-gray-900 text-white flex flex-col items-center justify-center text-center px-4">
-    <!-- Animated background elements -->
+  <div
+    class="min-h-screen relative overflow-hidden bg-gradient-to-b from-black to-gray-900"
+  >
+    <HeroSection :heroSectionInfo="heroSectionInfo">
+      <div>
+        <a
+          href="/menu-en.pdf"
+          target="_blank"
+          class="px-8 py-3 bg-red-500 hover:bg-red-700 transition-all duration-300 rounded-full text-white font-semibold overflow-hidden"
+        >
+          <span class="relative z-10">View Our Menu</span>
+          <!-- <div
+            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"
+          ></div> -->
+        </a>
+      </div>
+    </HeroSection>
+    <GallerySection :images="gallerySection"></GallerySection>
+    <!-- <Location :contact="contact"/> -->
     <div class="absolute inset-0 overflow-hidden opacity-10">
-      <div v-for="n in 20" :key="n" 
-           class="floating-sushi"
-           :style="{
-             left: `${Math.random() * 100}%`,
-             animationDelay: `${Math.random() * 15}s`,
-             animationDuration: `${15 + Math.random() * 10}s`
-           }">
+      <div
+        v-for="n in 20"
+        :key="n"
+        class="floating-sushi"
+        :style="{
+          left: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 15}s`,
+          animationDuration: `${15 + Math.random() * 10}s`
+        }"
+      >
         🍣
       </div>
-      <div v-for="n in 20" :key="`ramen-${n}`" 
-           class="floating-ramen"
-           :style="{
-             left: `${Math.random() * 100}%`,
-             animationDelay: `${Math.random() * 15}s`,
-             animationDuration: `${15 + Math.random() * 10}s`
-           }">
+      <div
+        v-for="n in 20"
+        :key="`ramen-${n}`"
+        class="floating-ramen"
+        :style="{
+          left: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 15}s`,
+          animationDuration: `${15 + Math.random() * 10}s`
+        }"
+      >
         🍜
       </div>
-    </div>
-
-    <!-- Main content -->
-    <div class="relative z-10 flex flex-col justify-center items-center">
-      <img src="/public/logo-white.jpg" alt="Komono Sushi" class="w-48 mb-8 hover:scale-105 transition-transform" />
-      <h1 class="font-bold mb-4 font-japanese">
-        <span class="block text-red-500 text-4xl md:text-6xl ">Kimono Kitchen</span>
-        <span class="block text-white text-2xl md:text-4xl mt-2">Sushi & Ramen</span>
-      </h1>
-      <p class="text-xl md:text-2xl mb-12 font-sans tracking-wider text-gray-300">Coming Soon</p>
-      
-      <a href="/menu-en.pdf" 
-         target="_blank"
-         class="group relative px-8 py-3 bg-red-600 hover:bg-red-700 transition-all duration-300 rounded-full text-white font-semibold overflow-hidden">
-        <span class="relative z-10">View Our Menu</span>
-        <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
-      </a>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-// Simplified script since we're only showing static content for now
+import useLanguage from "@/composables/useLanguage";
+const { languageData, loadLanguage, currentLanguage } = useLanguage();
+const heroSectionInfo = ref();
+const gallerySection = ref();
+const location = ref();
+const contact = ref();
+
+gallerySection.value = [
+  "/images/gallery/6.jpg",
+  "/images/gallery/2.jpg",
+  "/images/gallery/3.jpg",
+  "/images/gallery/4.jpg",
+  "/images/gallery/5.jpg",
+  "/images/gallery/1.jpg"
+];
+
+const changeLanguage = async (lang: string) => {
+  await loadLanguage(lang);
+  heroSectionInfo.value = languageData.value?.hero;
+  location.value = languageData.value?.schedule;
+  contact.value = languageData.value?.contact;
+};
+onMounted(async () => {
+  await loadLanguage("en");
+  heroSectionInfo.value = languageData.value?.hero;
+  location.value = languageData.value?.schedule;
+  contact.value = languageData.value?.contact;
+});
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 .font-japanese {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-.floating-sushi, .floating-ramen {
+.floating-sushi,
+.floating-ramen {
   position: absolute;
   font-size: 2rem;
   animation: float linear infinite;
@@ -84,7 +118,8 @@ p {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {

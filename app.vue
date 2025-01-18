@@ -23,17 +23,7 @@ useHead({
       content:
         "restaurante sushi ibiza, sushi ibiza, japonés ibiza, mejor sushi ibiza",
     },
-  ], 
-  // script: [
-  //   {
-  //     src: "https://www.googletagmanager.com/gtag/js?id=G-5Z4QF52JJ5",
-  //     async: true,
-  //     crossorigin: "anonymous",
-  //   },
-  //   {
-  //     src: "/js/analytics.js",
-  //   },
-  // ],
+  ]
 });
 </script>
 
