@@ -26,6 +26,12 @@
     "email": "kimonokitchen43@gmail.com",
     "address": "C/ Sant Vicent, 43 07840 Santa Eulària des Riu, Illes Balears"
   },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Lunch menu",
+    "pdf": "/menu/menu-en.pdf",
+    "mediodia": "/menu/menu-mediodia.pdf"
+  },
   "schedule": {
     "title": "Opening hours",
     "dateInfo": [

@@ -2,24 +2,32 @@
   <div
     class="min-h-screen relative overflow-hidden bg-gradient-to-b from-black to-gray-900"
   >
-  <Header class="relative z-50" :currentLanguage="currentLanguage"  @languageChanged="changeLanguage"/>
+    <Header
+      class="relative z-50"
+      :currentLanguage="currentLanguage"
+      @languageChanged="changeLanguage"
+    />
     <HeroSection :heroSectionInfo="heroSectionInfo">
-      <div>
+      <div class="flex gap-4">
         <a
-          href="/menu-en.pdf"
+          :href="menu?.pdf"
           target="_blank"
-          class="px-8 py-3 bg-red-500 hover:bg-red-700 transition-all duration-300 rounded-full text-white font-semibold overflow-hidden"
+          class="px-4 py-3 bg-red-500 hover:bg-red-700 transition-all duration-300 rounded-full text-white font-semibold overflow-hidden"
         >
-          <span class="relative z-10">View Our Menu</span>
-          <!-- <div
-            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"
-          ></div> -->
+          <span class="relative z-10">{{ menu?.title }}</span>
+        </a>
+        <a
+          :href="menu?.mediodia"
+          target="_blank"
+          class="px-4 py-3 bg-red-500 hover:bg-red-700 transition-all duration-300 rounded-full text-white font-semibold overflow-hidden"
+        >
+          <span class="relative z-10">{{ menu?.subtitle }}</span>
         </a>
       </div>
     </HeroSection>
     <GallerySection :images="gallerySection"></GallerySection>
-    <Location :contact="contact" class="relative z-50"/>
-    <footer-section class="relative z-50"/>
+    <Location :contact="contact" class="relative z-50" />
+    <footer-section class="relative z-50" />
     <!-- <div class="absolute inset-0 overflow-hidden opacity-10">
       <div
         v-for="n in 20"
@@ -56,6 +64,7 @@ const heroSectionInfo = ref();
 const gallerySection = ref();
 const location = ref();
 const contact = ref();
+const menu = ref();
 
 gallerySection.value = [
   "/images/gallery/6.jpg",
@@ -67,17 +76,18 @@ gallerySection.value = [
 ];
 
 const changeLanguage = async (lang: string) => {
-  console.log("changing language to", lang);
   await loadLanguage(lang);
   heroSectionInfo.value = languageData.value?.hero;
   location.value = languageData.value?.schedule;
   contact.value = languageData.value?.contact;
+  menu.value = languageData.value?.menu;
 };
 onMounted(async () => {
   await loadLanguage("en");
   heroSectionInfo.value = languageData.value?.hero;
   location.value = languageData.value?.schedule;
   contact.value = languageData.value?.contact;
+  menu.value = languageData.value?.menu;
 });
 </script>
 

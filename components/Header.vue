@@ -11,17 +11,24 @@
       </Button>
       <div
         v-if="showLanguageSelector"
-        class="absolute top-full mt-2 bg-white rounded-md shadow-lg p-2"
+        class="absolute top-full mt-2 r-0 bg-white rounded-md shadow-lg p-2"
       >
-        <ul>
+        <ul class="flex gap-4 flex-col">
           <li
             v-for="language in languages"
             :key="language"
-            class="py-1 px-4 hover:bg-gray-200"
+            class="pr-6 hover:bg-gray-200 flex gap-4 items-center cursor-pointer border-0"
           >
-            <a href="#" @click.prevent="changeLanguage(language)">{{
-              language
-            }}</a>
+            <span
+              href="#"
+              @click.prevent="changeLanguage(language)"
+              class="text-lg text-black"
+              >{{ language }}</span
+            ><img
+              class="w-6"
+              :src="`/country-flag/${language}.svg`"
+              alt="languange country flag"
+            />
           </li>
         </ul>
       </div>
@@ -50,13 +57,6 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-li {
-  border-bottom: 1px solid #ddd;
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 a {

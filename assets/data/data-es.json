@@ -20,6 +20,12 @@
     "description": "Experimenta el auténtico sabor de Japón en el corazón de Ibiza",
     "imagePath": "/images/hero-image.jpg"
   },
+  "menu": {
+    "title": "Nuestro Menú",
+    "subtitle": "Menú Mediodia",
+    "pdf": "/menu/menu-es.pdf",
+    "mediodia": "/menu/menu-mediodia.pdf"
+  },
   "contact": {
     "title": "Contacto",
     "phone": "tel:+34 871 711 750",
