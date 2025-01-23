@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white py-2 md:py-4 px-4 md:px-8 flex justify-between items-center">
+  <div class="text-white py-2 md:py-4 px-4 md:px-8 flex justify-between items-center fixed">
     <img src="/logo.png" alt="" class="w-16 h-16 md:h-24 md:w-24 rounded-full bg-white" />
     <div class="relative">
       <Button

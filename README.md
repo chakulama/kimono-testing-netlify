@@ -1,5 +1,5 @@
-# restaurantemediterraneobcn
-restaurantemediterraneobcn static website
+# Kimono Kitchen 
+https://kimonokitchenibiza.com/ static website
 
 # npm
 npm install
