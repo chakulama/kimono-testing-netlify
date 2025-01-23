@@ -1,6 +1,8 @@
 <template>
-  <div class="flex justify-between flex-col-reverse md:flex-row p-4 md:p-8">
-    <div class="text-container z-20 flex flex-col px-2 md:px-8 mt-auto gap-8 mb-16 animate-fadeIn text-white">
+  <div class="flex justify-between flex-col-reverse md:flex-row px-8">
+    <div
+      class="text-container z-20 flex flex-col px-2 md:px-8 mt-auto gap-8 mb-16 animate-fadeIn text-white"
+    >
       <h1 class="text-4xl md:text-8xl font-bold mt-4 animate-pulse">
         {{ heroSectionInfo?.title }}
       </h1>
@@ -21,7 +23,7 @@
 
 <script setup>
 const props = defineProps({
-  heroSectionInfo: Object,
+  heroSectionInfo: Object
 });
 </script>
 

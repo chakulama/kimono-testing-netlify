@@ -2,6 +2,7 @@
   <div
     class="min-h-screen relative overflow-hidden bg-gradient-to-b from-black to-gray-900"
   >
+  <Header class="relative z-50" :currentLanguage="currentLanguage"  @languageChanged="changeLanguage"/>
     <HeroSection :heroSectionInfo="heroSectionInfo">
       <div>
         <a
@@ -17,8 +18,9 @@
       </div>
     </HeroSection>
     <GallerySection :images="gallerySection"></GallerySection>
-    <!-- <Location :contact="contact"/> -->
-    <div class="absolute inset-0 overflow-hidden opacity-10">
+    <Location :contact="contact" class="relative z-50"/>
+    <footer-section class="relative z-50"/>
+    <!-- <div class="absolute inset-0 overflow-hidden opacity-10">
       <div
         v-for="n in 20"
         :key="n"
@@ -43,7 +45,7 @@
       >
         🍜
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -65,6 +67,7 @@ gallerySection.value = [
 ];
 
 const changeLanguage = async (lang: string) => {
+  console.log("changing language to", lang);
   await loadLanguage(lang);
   heroSectionInfo.value = languageData.value?.hero;
   location.value = languageData.value?.schedule;
