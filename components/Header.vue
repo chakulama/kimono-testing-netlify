@@ -5,7 +5,7 @@
     <img src="/logo.png" alt="" class="w-16 h-16 md:h-18 md:w-18 rounded-full bg-white" />
     <div class="relative">
       <Button
-        class="text-white font-semibold hover:text-gray-200 transition-colors uppercase"
+        class="text-black bg-white font-semibold hover:text-gray-200 hover:bg-red-500 transition-colors uppercase"
         @click="showLanguageSelector = !showLanguageSelector"
         size="sm"
       >
@@ -20,17 +20,18 @@
             v-for="language in languages"
             :key="language"
             class="pr-6 hover:bg-gray-200 flex gap-4 items-center cursor-pointer border-0"
+            @click.prevent="changeLanguage(language)"
           >
-            <span
-              href="#"
-              @click.prevent="changeLanguage(language)"
-              class="text-lg text-black"
-              >{{ language }}</span
-            ><img
-              class="w-6"
-              :src="`/country-flag/${language}.svg`"
-              alt="languange country flag"
-            />
+            <div href="#" class="text-lg text-black flex gap-3">
+              <span>
+                {{ language }}
+              </span>
+              <img
+                class="w-6"
+                :src="`/country-flag/${language}.svg`"
+                alt="languange country flag"
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -53,6 +54,7 @@ const fullLanguage = computed(() => {
 });
 
 const changeLanguage = (language: string) => {
+  console.log(language);
   emit("languageChanged", language);
   showLanguageSelector.value = false;
 };

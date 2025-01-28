@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between flex-col-reverse md:flex-row px-8">
     <div
-      class="text-container z-20 flex flex-col px-2 md:px-8 mt-auto gap-8 mb-16 animate-fadeIn text-white"
+      class="text-container z-20 flex flex-col px-2 md:px-8 md:mt-36 gap-4 mb-16 animate-fadeIn text-white"
     >
       <h1 class="text-4xl md:text-8xl font-bold mt-4 animate-pulse">
         {{ heroSectionInfo?.title }}
@@ -13,7 +13,7 @@
     </div>
     <img
       v-if="heroSectionInfo?.imagePath"
-      class="rounded-md md:w-3/4 max-h-[500px] md:max-h-[800px] object-cover"
+      class="rounded-md md:w-3/4 max-h-[500px] md:max-h-[600px] object-cover"
       loading="lazy"
       :src="heroSectionInfo.imagePath"
     />
