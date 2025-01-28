@@ -1,13 +1,15 @@
 <template>
-  <div class="text-white py-2 md:py-4 px-4 md:px-8 flex justify-between items-center fixed">
-    <img src="/logo.png" alt="" class="w-16 h-16 md:h-24 md:w-24 rounded-full bg-white" />
+  <div
+    class="text-white py-2 md:py-4 px-4 md:px-8 flex justify-between items-center fixed"
+  >
+    <img src="/logo.png" alt="" class="w-16 h-16 md:h-18 md:w-18 rounded-full bg-white" />
     <div class="relative">
       <Button
-        class="text-white font-semibold hover:text-gray-200 transition-colors uppercase text-lg"
+        class="text-white font-semibold hover:text-gray-200 transition-colors uppercase"
         @click="showLanguageSelector = !showLanguageSelector"
         size="sm"
       >
-        {{ currentLanguage }}
+        {{ fullLanguage }}
       </Button>
       <div
         v-if="showLanguageSelector"
@@ -45,6 +47,10 @@ const emit = defineEmits(["languageChanged"]);
 
 const languages = ["en", "es"];
 const showLanguageSelector = ref(false);
+
+const fullLanguage = computed(() => {
+  return props.currentLanguage === "en" ? "English" : "Español";
+});
 
 const changeLanguage = (language: string) => {
   emit("languageChanged", language);
