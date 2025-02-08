@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex justify-center my-12 px-4 text-white">
+  <div class="flex justify-center my-12 px-4 text-white location">
     <div class="flex items-center gap-12 flex-col md:flex-row">
       <div class="relative group">
         <iframe
@@ -43,7 +43,7 @@
         </a>
 
         <!-- Schedule Section (Uncommented and Styled) -->
-        <div class="mt-8 p-6 backdrop-blur-sm bg-white/10 rounded-lg transform transition duration-500 hover:scale-105">
+        <div class="mt-8 p-4 backdrop-blur-sm bg-white/10 rounded-lg transform transition duration-500 hover:scale-105">
           <h3 class="text-2xl font-bold mb-4">{{ schedule?.title }}</h3>
           <ul class="space-y-3">
             <li

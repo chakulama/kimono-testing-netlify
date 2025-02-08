@@ -3,7 +3,7 @@
     class="min-h-screen relative overflow-hidden bg-gradient-to-b from-black to-gray-900"
   >
     <Header
-      class="relative z-50"
+      class=" z-50"
       :currentLanguage="currentLanguage"
       @languageChanged="changeLanguage"
     />
@@ -30,9 +30,9 @@
       :description="aboutSection?.description"
       :image="aboutSection?.imagePath"
     />
-    <GallerySection :images="gallerySection" class="relative z-50"></GallerySection>
+    <GallerySection :images="gallerySection" class="relative z-40"></GallerySection>
     <Location :contact="contact" :schedule="schedule" class="relative z-40" />
-    <footer-section class="relative z-50" />
+    <footer-section class="relative z-40" />
     <div class="absolute inset-0 overflow-hidden opacity-10">
       <div
         v-for="n in 20"

@@ -1,6 +1,7 @@
 <template>
   <div
-    class="text-white py-2 md:py-4 px-4 md:px-8 flex justify-between items-center fixed"
+    class="text-white py-2 px-4 md:px-8 flex justify-between items-center fixed w-full transition-all duration-300 ease-in-out"
+    :class="{ 'bg-black/30 backdrop-blur-sm': isScrolled }"
   >
     <img src="/logo.png" alt="" class="w-16 h-16 md:h-18 md:w-18 rounded-full bg-white" />
     <div class="relative">
@@ -48,6 +49,7 @@ const emit = defineEmits(["languageChanged"]);
 
 const languages = ["en", "es"];
 const showLanguageSelector = ref(false);
+const isScrolled = ref(false);
 
 const fullLanguage = computed(() => {
   return props.currentLanguage === "en" ? "English" : "Español";
@@ -58,6 +60,17 @@ const changeLanguage = (language: string) => {
   emit("languageChanged", language);
   showLanguageSelector.value = false;
 };
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50; // Adjust threshold as needed
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style lang="scss" scoped>
