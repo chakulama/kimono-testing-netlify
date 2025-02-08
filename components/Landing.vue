@@ -25,10 +25,15 @@
         </a>
       </div>
     </HeroSection>
-    <GallerySection :images="gallerySection"></GallerySection>
-    <Location :contact="contact" class="relative z-50" />
+    <AboutSection
+      :title="aboutSection?.title"
+      :description="aboutSection?.description"
+      :image="aboutSection?.imagePath"
+    />
+    <GallerySection :images="gallerySection" class="relative z-50"></GallerySection>
+    <Location :contact="contact" class="relative z-40" />
     <footer-section class="relative z-50" />
-    <!-- <div class="absolute inset-0 overflow-hidden opacity-10">
+    <div class="absolute inset-0 overflow-hidden opacity-10">
       <div
         v-for="n in 20"
         :key="n"
@@ -53,7 +58,7 @@
       >
         🍜
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -65,6 +70,7 @@ const gallerySection = ref();
 const location = ref();
 const contact = ref();
 const menu = ref();
+const aboutSection = ref();
 
 gallerySection.value = [
   "/images/gallery/6.jpg",
@@ -81,6 +87,7 @@ const changeLanguage = async (lang: string) => {
   location.value = languageData.value?.schedule;
   contact.value = languageData.value?.contact;
   menu.value = languageData.value?.menu;
+  aboutSection.value = languageData.value?.aboutSection;
 };
 onMounted(async () => {
   await loadLanguage("en");
@@ -88,6 +95,7 @@ onMounted(async () => {
   location.value = languageData.value?.schedule;
   contact.value = languageData.value?.contact;
   menu.value = languageData.value?.menu;
+  aboutSection.value = languageData.value?.aboutSection;
 });
 </script>
 

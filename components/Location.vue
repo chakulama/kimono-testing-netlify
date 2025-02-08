@@ -1,22 +1,15 @@
 <template>
   <div class="container flex justify-center my-12 px-4 text-white">
     <div class="flex items-center gap-12 flex-col md:flex-row">
-      <!-- Map with hover effect and border -->
       <div class="relative group">
-        <!-- <div
-          class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
-        ></div> -->
-        <Skeleton
-          class="relative h-[450px] w-[600px] rounded-lg shadow-xl"
-        />
-        <!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7048346839088!2d2.213672776768759!3d41.408249171297285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a35af62e35bd%3A0xa94463a8a06ddddf!2sRistorante%20Mediterrani!5e1!3m2!1sen!2ses!4v1732905446974!5m2!1sen!2ses"
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4017923278343!2d1.5343677999999998!3d38.9855748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129915f5ef148979%3A0x51b844944ba0476e!2sKimono%20Kitchen%20In%20Ibiza!5e1!3m2!1sen!2ses!4v1739037791866!5m2!1sen!2ses"
           height="450"
           style="border: 0"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           class="relative w-[600px] rounded-lg shadow-xl transform transition duration-500 hover:scale-[1.02]"
-        ></iframe> -->
+        ></iframe>
       </div>
 
       <!-- Contact Information -->

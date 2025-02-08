@@ -642,5 +642,10 @@
       "key": "legal",
       "fullText": "legal text here"
     }
-  ]
+  ],
+  "aboutSection": {
+    "title": "About us",
+    "description": "With 20 years of experience in Japanese and Thai cuisines, we proudly present a new fusion food concept. Combining flavors from various cultures, we create innovative dishes that delightly offering a fresh and healthy food in different way",
+    "imagePath": "/logo-white.jpg"
+  }
 }

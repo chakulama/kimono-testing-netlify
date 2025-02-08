@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between flex-col-reverse md:flex-row px-8">
+  <div class="flex justify-between flex-col-reverse md:flex-row px-4 md:px-8">
     <div
       class="text-container z-20 flex flex-col px-2 md:px-8 md:mt-36 gap-4 mb-16 animate-fadeIn text-white"
     >
