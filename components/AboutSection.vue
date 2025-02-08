@@ -1,5 +1,5 @@
 <template>
-  <section class="px-8 md:px-16 md:mt-36 gap-4 mb-16">
+  <section class="px-8 md:px-16 md:mt-16 gap-4 mb-16">
     <div class="flex justify-between items-center">
       <div class="about-text max-w-5xl">
         <h2 class="about-title">{{ title }}</h2>

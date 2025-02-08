@@ -36,8 +36,16 @@
     "title": "Opening hours",
     "dateInfo": [
       {
-        "day": "Tuesday - Sunday",
-        "hours": "11:00 - 16:00 , 19:00 - 23:00"
+        "day": "Monday - Thursday",
+        "hours": "12:30 - 16:30 , 18:30 - 23:30"
+      },
+      {
+        "day": "Friday - Saturday",
+        "hours": "12:30 - 16:30 , 18:30 - 00:00"
+      },
+      {
+        "day": "Sunday",
+        "hours": "12:30 - 16:30 , 18:30 - 23:00"
       }
     ],
     "askUs": "Call us"
@@ -644,8 +652,8 @@
     }
   ],
   "aboutSection": {
-    "title": "About us",
-    "description": "With 20 years of experience in Japanese and Thai cuisines, we proudly present a new fusion food concept. Combining flavors from various cultures, we create innovative dishes that delightly offering a fresh and healthy food in different way",
+    "title": "Sobre nosotros",
+    "description": "Con 20 años de experiencia en cocina Japonesa y Tailandesa, orgullosamente presentamos un nuevo concepto de comida fusión. Combinando sabores de varias culturas, creamos platos innovadores que deleitan ofreciendo una comida fresca y saludable de una manera diferente",
     "imagePath": "/logo-white.jpg"
   }
 }

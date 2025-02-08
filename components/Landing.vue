@@ -31,7 +31,7 @@
       :image="aboutSection?.imagePath"
     />
     <GallerySection :images="gallerySection" class="relative z-50"></GallerySection>
-    <Location :contact="contact" class="relative z-40" />
+    <Location :contact="contact" :schedule="schedule" class="relative z-40" />
     <footer-section class="relative z-50" />
     <div class="absolute inset-0 overflow-hidden opacity-10">
       <div
@@ -71,6 +71,7 @@ const location = ref();
 const contact = ref();
 const menu = ref();
 const aboutSection = ref();
+const schedule = ref();
 
 gallerySection.value = [
   "/images/gallery/6.jpg",
@@ -88,6 +89,7 @@ const changeLanguage = async (lang: string) => {
   contact.value = languageData.value?.contact;
   menu.value = languageData.value?.menu;
   aboutSection.value = languageData.value?.aboutSection;
+  schedule.value = languageData.value?.schedule;
 };
 onMounted(async () => {
   await loadLanguage("en");
@@ -96,6 +98,7 @@ onMounted(async () => {
   contact.value = languageData.value?.contact;
   menu.value = languageData.value?.menu;
   aboutSection.value = languageData.value?.aboutSection;
+  schedule.value = languageData.value?.schedule;
 });
 </script>
 
@@ -111,7 +114,7 @@ onMounted(async () => {
   position: absolute;
   font-size: 2rem;
   animation: float linear infinite;
-  opacity: 0.5;
+  opacity: .8;
 }
 
 @keyframes float {

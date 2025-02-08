@@ -15,7 +15,7 @@
       <!-- Contact Information -->
       <div class="mt-4 text-center space-y-6">
         <h2
-          class="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent"
+          class="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-transparent"
         >
           {{ contact?.title }}
         </h2>
@@ -23,7 +23,7 @@
         <!-- Phone Number -->
         <a
           :href="`tel:${contact?.phone}`"
-          class="group flex items-center justify-center gap-3 text-xl font-semibold hover:text-pink-400 transition-all duration-300 ease-in-out"
+          class="group flex items-center justify-center gap-3 text-xl font-semibold hover:text-red-500 transition-all duration-300 ease-in-out"
         >
           <PhoneIcon class="h-6 w-6 group-hover:animate-bounce" />
           <span class="group-hover:translate-x-1 transition-transform duration-300">
@@ -34,7 +34,7 @@
         <!-- Email -->
         <a
           :href="`mailto:${contact?.email}`"
-          class="group flex items-center justify-center gap-3 text-xl font-semibold hover:text-purple-400 transition-all duration-300 ease-in-out"
+          class="group flex items-center justify-center gap-3 text-xl font-semibold hover:text-red-500 transition-all duration-300 ease-in-out"
         >
           <EnvelopeIcon class="h-6 w-6 group-hover:animate-bounce" />
           <span class="group-hover:translate-x-1 transition-transform duration-300">
@@ -43,7 +43,7 @@
         </a>
 
         <!-- Schedule Section (Uncommented and Styled) -->
-        <!-- <div class="mt-8 p-6 backdrop-blur-sm bg-white/10 rounded-lg transform transition duration-500 hover:scale-105">
+        <div class="mt-8 p-6 backdrop-blur-sm bg-white/10 rounded-lg transform transition duration-500 hover:scale-105">
           <h3 class="text-2xl font-bold mb-4">{{ schedule?.title }}</h3>
           <ul class="space-y-3">
             <li
@@ -51,11 +51,11 @@
               :key="index"
               class="text-lg flex flex-col"
             >
-              <span class="font-semibold text-pink-300">{{ info.day }}</span>
-              <span class="text-purple-200">{{ info.hours }}</span>
+              <span class="font-semibold text-red-500">{{ info.day }}</span>
+              <span class="text-white">{{ info.hours }}</span>
             </li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -69,9 +69,14 @@ interface ContactInfo {
   email: string;
   title: string;
 }
+interface Schedule {
+  title: string;
+  dateInfo: Array<{ day: string; hours: string }>;
+}
 
 const props = defineProps<{
   contact: ContactInfo;
+  schedule: Schedule;
 }>();
 </script>
 
